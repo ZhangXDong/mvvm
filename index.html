@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="renderer" content="webkit|ie-comp|ie-stand">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Web App">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes, minimum-scale=1, maximum-scale=1">
+    <title>Document</title>
+    <style>
+html, body {
+    font-size: 16px;
+    height: 100%;
+    margin: 0; padding: 0;
+}
+
+
+    </style>
+</head>
+
+<body>
+    <body> 
+        <div id="app">
+            <input type="text" v-model="message">
+            {{message}}
+        </div>
+    </body>
+</body>
+<script src="./watcher.js"></script>
+<script src="./observer.js"></script>
+<script src="./compile.js"></script>
+<script src="./mvvm.js"></script>
+<!-- <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script> -->
+<script type="text/javascript">
+
+let vm = new MVVM({
+    el: '#app',
+    data: {
+        message: '12345'
+    }
+})
+
+
+
+
+
+
+</script>
+
+</html>
